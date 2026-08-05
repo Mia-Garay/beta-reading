@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professional Beta Reading Services | Mia Garay</title>
+  <meta name="description" content="Professional beta reading for polished adult and YA manuscripts. Honest, detailed, human reader feedback from Mia Garay." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --page:#FAF9F6;
+      --card:#FFFFFF;
+      --heading:#4C5C68;
+      --accent:#FF9A8A;
+      --text:#444444;
+      --soft:#F3EFEB;
+      --border:#E6E0DA;
+      --white:#FFFFFF;
+      --shadow:0 14px 40px rgba(76,92,104,.10);
+      --radius:18px;
+      --max:1120px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--page);color:var(--text);font-family:"Open Sans",Arial,sans-serif;font-size:17px;line-height:1.65}
+    a{color:inherit}
+    .container{width:min(calc(100% - 36px),var(--max));margin:0 auto}
+    .announcement{background:var(--heading);color:var(--white);text-align:center;padding:10px 18px;font-size:14px;font-weight:700}
+    .hero{padding:82px 0 72px;background:radial-gradient(circle at 85% 15%,rgba(255,154,138,.25),transparent 30%),linear-gradient(180deg,#FAF9F6 0%,#F6F1ED 100%)}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:52px;align-items:center}
+    .eyebrow{display:inline-block;margin-bottom:16px;color:var(--heading);font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:13px}
+    h1,h2,h3{color:var(--heading);line-height:1.25;margin-top:0}
+    h1{font-size:clamp(40px,6vw,68px);letter-spacing:-.035em;margin-bottom:22px}
+    h2{font-size:clamp(30px,4vw,44px);letter-spacing:-.025em;margin-bottom:18px}
+    h3{font-size:22px;margin-bottom:10px}
+    p:last-child{margin-bottom:0}
+    .lead{font-size:21px;max-width:720px;margin:0 0 30px}
+    .button-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+    .button{display:inline-block;background:var(--accent);color:var(--white);text-decoration:none;font-weight:800;border-radius:999px;padding:15px 24px;box-shadow:0 9px 20px rgba(255,154,138,.25)}
+    .button.secondary{background:transparent;color:var(--heading);box-shadow:none;border:2px solid var(--heading)}
+    .trust-card,.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
+    .trust-card ul{margin:18px 0 0;padding:0;list-style:none}
+    .trust-card li{position:relative;padding:11px 0 11px 30px;border-bottom:1px solid var(--border)}
+    .trust-card li:last-child{border-bottom:0}
+    .trust-card li:before{content:"✓";position:absolute;left:0;color:#e77f70;font-weight:800}
+    section{padding:76px 0}
+    .soft-section{background:var(--soft)}
+    .section-intro{max-width:780px;margin-bottom:34px}
+    .grid-2,.grid-3{display:grid;gap:22px}
+    .grid-2{grid-template-columns:repeat(2,1fr)}
+    .grid-3{grid-template-columns:repeat(3,1fr)}
+    .package{display:flex;flex-direction:column;min-height:100%}
+    .package.featured{border:2px solid var(--accent);transform:translateY(-8px)}
+    .badge{display:inline-block;align-self:flex-start;background:var(--accent);color:var(--white);font-size:12px;font-weight:800;padding:7px 10px;border-radius:999px;margin-bottom:16px;text-transform:uppercase;letter-spacing:.06em}
+    .price{font-size:42px;line-height:1;color:var(--heading);font-weight:800;margin:10px 0 8px}
+    .package-meta{font-size:14px;font-weight:700;color:#6d7479;margin-bottom:18px}
+    .package ul{padding-left:20px;margin:0 0 24px}
+    .package .button{margin-top:auto;text-align:center}
+    .note{background:#fff7f4;border:1px solid #ffd3ca;border-radius:14px;padding:18px 20px;margin-top:24px;font-size:15px}
+    .policy-note{margin-top:14px}
+    .process{counter-reset:step}
+    .step{position:relative;padding-left:66px;min-height:54px}
+    .step:before{counter-increment:step;content:counter(step);position:absolute;left:0;top:0;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--heading);color:var(--white);font-weight:800}
+    .about{display:grid;grid-template-columns:.72fr 1.28fr;gap:38px;align-items:stretch}
+    .about-panel{background:var(--heading);color:var(--white);border-radius:var(--radius);padding:34px;display:flex;flex-direction:column;justify-content:center}
+    .about-panel h2{color:var(--white);margin-bottom:0}
+    details{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px 20px;margin-bottom:12px}
+    summary{cursor:pointer;font-weight:800;color:var(--heading)}
+    details p{margin-bottom:0}
+    .cta{background:var(--heading);color:var(--white);text-align:center;border-radius:28px;padding:54px 28px}
+    .cta h2{color:var(--white)}
+    footer{padding:34px 0 50px;text-align:center;font-size:14px;color:#6d7479}
+    .footer-links{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 20px;margin-top:10px}
+    .footer-links a{text-decoration:none}
+    @media(max-width:900px){
+      .hero-grid,.about{grid-template-columns:1fr}
+      .grid-3{grid-template-columns:1fr}
+      .package.featured{transform:none}
+    }
+    @media(max-width:700px){
+      .grid-2{grid-template-columns:1fr}
+    }
+    @media(max-width:640px){
+      body{font-size:16px}
+      .hero{padding:58px 0 50px}
+      section{padding:58px 0}
+      .button-row{align-items:stretch}
+      .button{width:100%;text-align:center}
+      .trust-card,.card{padding:23px}
+    }
+  </style>
+</head>
+<body>
+  <div class="announcement">Detailed, human beta reading. Your manuscript is never uploaded to AI.</div>
+
+  <header class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">Professional beta reading by Mia Garay</span>
+        <h1>Before you publish, see your book through a reader’s eyes.</h1>
+        <p class="lead">I will help you understand what a real reader notices, feels, questions, and remembers while reading your book.</p>
+        <div class="button-row">
+          <a class="button" href="https://intake.miagaray.com">Request a Beta Read</a>
+          <a class="button secondary" href="#packages">View Packages</a>
+        </div>
+      </div>
+
+      <aside class="trust-card">
+        <h3>What you can expect</h3>
+        <ul>
+          <li>Real-time inline reader reactions</li>
+          <li>A detailed written beta report</li>
+          <li>Honest feedback on what works and what does not</li>
+          <li>Special attention to plot holes, inconsistencies, worldbuilding, and emotional impact</li>
+          <li>Confidential treatment of your manuscript</li>
+          <li>No AI reading or analysis</li>
+        </ul>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <section class="soft-section">
+      <div class="container">
+        <div class="section-intro">
+          <span class="eyebrow">What you receive</span>
+          <h2>Feedback built around value.</h2>
+          <p>Every manuscript needs something different. I leave comments where I have a meaningful reaction, question, or observation, and I shape the final report around the feedback you asked for.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="card">
+            <h3>Inline reader reactions</h3>
+            <p>Comments left directly in your Google Doc as I read, so you can see where I connected, questioned something, became confused, or had a strong reaction.</p>
+          </article>
+          <article class="card">
+            <h3>Written beta report</h3>
+            <p>A clear overview of my experience with the manuscript, focused on the questions and concerns you asked me to address.</p>
+          </article>
+          <article class="card">
+            <h3>Follow-up support</h3>
+            <p>Every package includes email follow-up so you can ask questions and make sure you understand my feedback. Full-manuscript beta reads also include a 30-minute call.</p>
+          </article>
+          <article class="card">
+            <h3>Your questionnaire</h3>
+            <p>When you provide a beta-reader questionnaire, I complete it in full in addition to your report.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="packages">
+      <div class="container">
+        <div class="section-intro">
+          <span class="eyebrow">Beta reading packages</span>
+          <h2>Choose the package that matches the length of your manuscript.</h2>
+        </div>
+
+        <div class="grid-3">
+          <article class="card package">
+            <h3>First Chapter</h3>
+            <div class="price">$20</div>
+            <div class="package-meta">Up to 5,000 words · 3 business days</div>
+            <ul>
+              <li>Inline reader reactions</li>
+              <li>Beta report of approximately 1 page</li>
+              <li>Questionnaire completed, when provided</li>
+              <li>Email follow-up</li>
+            </ul>
+            <a class="button" href="https://intake.miagaray.com">Request a Beta Read</a>
+          </article>
+
+          <article class="card package">
+            <h3>Partial Manuscript</h3>
+            <div class="price">$85</div>
+            <div class="package-meta">Up to 40,000 words · 12 business days</div>
+            <ul>
+              <li>Inline reader reactions</li>
+              <li>Beta report of approximately 2 pages</li>
+              <li>Questionnaire completed, when provided</li>
+              <li>Email follow-up</li>
+            </ul>
+            <a class="button" href="https://intake.miagaray.com">Request a Beta Read</a>
+          </article>
+
+          <article class="card package featured">
+            <span class="badge">Most popular</span>
+            <h3>Full Manuscript</h3>
+            <div class="price">$165</div>
+            <div class="package-meta">Up to 90,000 words · 21 business days</div>
+            <ul>
+              <li>Detailed inline reader reactions</li>
+              <li>Beta report of approximately 2 to 3 pages</li>
+              <li>Questionnaire completed, when provided</li>
+              <li>Email follow-up</li>
+              <li>30-minute follow-up call</li>
+            </ul>
+            <a class="button" href="https://intake.miagaray.com">Request a Beta Read</a>
+          </article>
+        </div>
+
+        <div class="note"><strong>Manuscripts over 90,000 words:</strong> Each additional 10,000 words adds $20 and 3 business days.</div>
+        <div class="note policy-note"><strong>Timing and availability:</strong> Turnaround times are measured in business days and begin after payment and manuscript access are received. Availability is limited, and your deadline is not reserved until payment is complete. Delays in sharing your manuscript may require a new deadline.</div>
+        <div class="note policy-note"><strong>Cancellation and refunds:</strong> You may cancel within 24 hours of payment for a full refund. Once work has begun, refunds are considered based on the circumstances and the amount of work completed. Full details are available in the Refund Policy and Beta Reading Terms.</div>
+      </div>
+    </section>
+
+    <section class="soft-section">
+      <div class="container">
+        <div class="section-intro">
+          <span class="eyebrow">Manuscript fit</span>
+          <h2>Beta reading is for a polished manuscript.</h2>
+          <p>Your manuscript does not need professional editing first, but it should have gone through several rounds of self-editing and be as close to publishable as you can make it on your own.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="card">
+            <h3>Best genre fit</h3>
+            <p><strong>Primary:</strong> Adult and YA fantasy, science fiction, mystery, and thriller.</p>
+            <p><strong>Selectively open to:</strong> Romance, historical fiction, nonfiction, and literary fiction.</p>
+          </article>
+
+          <article class="card">
+            <h3>Not accepted</h3>
+            <p>Westerns, horror, memoirs, and children’s books.</p>
+            <p>I may also decline a manuscript when I believe it needs more self-editing or when I am not the right reader for what the author needs.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-intro">
+          <span class="eyebrow">How it works</span>
+          <h2>From request to completed feedback.</h2>
+        </div>
+
+        <div class="grid-2 process">
+          <article class="card step">
+            <h3>Submit your request</h3>
+            <p>Tell me about yourself, your book, and the feedback you are looking for.</p>
+          </article>
+
+          <article class="card step">
+            <h3>I review your request</h3>
+            <p>I review your submission to make sure I understand your book, the feedback you are looking for, and whether I am the right beta reader for this stage of your manuscript.</p>
+          </article>
+
+          <article class="card step">
+            <h3>We talk through any questions</h3>
+            <p>I will contact you by email with any questions I have and give you space to ask me anything. A free 15-minute call is also available if you would rather talk through the details.</p>
+          </article>
+
+          <article class="card step">
+            <h3>We confirm the fit</h3>
+            <p>Once we both feel clear about the manuscript, the feedback you need, and the deadline, I send the payment information.</p>
+          </article>
+
+          <article class="card step">
+            <h3>Payment and manuscript access</h3>
+            <p>Once payment is complete, you will share your manuscript through Google Docs with commenter access only. This lets me leave detailed comments while you keep control of the file.</p>
+          </article>
+
+          <article class="card step">
+            <h3>You receive your feedback</h3>
+            <p>I deliver your inline comments, written report, and completed questionnaire, when provided, by the agreed deadline. Follow-up begins after you have had a chance to read through everything.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-intro">
+          <span class="eyebrow">Confidentiality</span>
+          <h2>Your manuscript remains yours and stays private.</h2>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <h3>A human-only reading process</h3>
+            <p>I personally read every word of your manuscript. It is never uploaded to AI, and AI is never used to read, analyze, or evaluate your story.</p>
+          </article>
+
+          <article class="card">
+            <h3>Your work stays under your control</h3>
+            <p>You retain all rights to your manuscript. Files are shared through Google Docs with commenter access only, so I can leave feedback without taking ownership or control of the document.</p>
+          </article>
+
+          <article class="card">
+            <h3>Confidential from the start</h3>
+            <p>I treat every manuscript as private, whether or not an NDA is in place. I am also willing to review and sign a reasonable author-provided NDA or beta-reader agreement.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="soft-section">
+      <div class="container">
+        <div class="section-intro">
+          <span class="eyebrow">Frequently asked questions</span>
+          <h2>Before you request a beta read.</h2>
+        </div>
+
+        <details>
+          <summary>Is beta reading the same as editing?</summary>
+          <p>No. Beta reading focuses on your experience as a reader: what is clear, confusing, engaging, slow, believable, or emotionally effective. I may point out wording or grammar when it interrupts the reading experience, but I do not edit or rewrite your manuscript.</p>
+        </details>
+
+        <details>
+          <summary>Will you tell me whether my book is ready to publish?</summary>
+          <p>I can tell you how the manuscript worked for me as a reader and where I believe it may need more attention. The final decision about whether it is ready to publish remains yours.</p>
+        </details>
+
+        <details>
+          <summary>Do you read the entire manuscript?</summary>
+          <p>Yes. Once I accept a paid beta read, I read the entire manuscript unless an unexpected issue makes it necessary to stop. If that happens, I will contact you and explain the situation.</p>
+        </details>
+
+        <details>
+          <summary>Will you give me progress updates?</summary>
+          <p>I do not send automatic progress updates, but you are welcome to ask how the read is going. I deliver the full feedback together so my reading experience is not influenced by an ongoing discussion about the manuscript.</p>
+        </details>
+
+        <details>
+          <summary>Can I send you my own questionnaire?</summary>
+          <p>Yes. When you provide a beta-reader questionnaire, I complete it in addition to the written report.</p>
+        </details>
+
+        <details>
+          <summary>Can you sign an NDA?</summary>
+          <p>Yes. I am willing to review and sign a reasonable author-provided NDA or beta-reader agreement.</p>
+        </details>
+
+        <details>
+          <summary>Do you use AI to read manuscripts?</summary>
+          <p>No. I personally read every word. Your manuscript is never uploaded to AI, and AI is never used to read, analyze, or evaluate your story.</p>
+        </details>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="cta">
+          <h2>Tell me about your book.</h2>
+          <p>Complete the request form with information about your manuscript and the feedback you are looking for. I will review it and contact you with any questions before we decide whether to move forward.</p>
+          <a class="button" href="https://intake.miagaray.com">Submit Your Request</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>© Mia Garay · Professional Beta Reading Services</div>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Beta Reading Terms</a>
+        <a href="#">Refund Policy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
